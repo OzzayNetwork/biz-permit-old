@@ -5,6 +5,7 @@
 <title class="">Single business permit</title>
 <link href="https://fonts.googleapis.com/css?family=Aldrich|Fira+Sans:200,300,400,500,700,800,900|Norican&display=swap&subset=cyrillic" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700|Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+
 <style>
 	@charset "utf-8";
 	:root {
@@ -40,6 +41,11 @@
 	.w-100 {
     width: 100%!important;
 }
+	
+	.validations-container{
+		display: flex;
+    justify-content: flex-end;
+	}
 img {
     vertical-align: middle;
     border-style: none;
@@ -123,12 +129,24 @@ p {
 	.mb-0, .my-0 {
     margin-bottom: 0!important;
 }
+	.pl-0{
+		padding-left: 0px !important;
+	}
+	.pr-0{
+		padding-right: 0px !important;
+	}
 	hr {
     margin-top: 1rem;
     margin-bottom: 1rem;
     border: 0;
     border-top: 1px solid rgba(0,0,0,.1);
 }
+	
+	.id-container{
+		padding-left: 0px;
+    border: 1px solid black;
+    background: transparent;
+	}
 	.p-3 {
     padding: 1rem!important;
 }
@@ -527,20 +545,15 @@ ol {
 			  
 			  	<hr class="mb-0">
             <!--				control number and issue date container-->
-            <div class="col-12 d-flex mt-2">
-			
-              <div class="col-6">
-                <div>
-                  <p class="text-left mt-2">Date of Issue :<span class="libre-bold">01-05-2019  11:04:18</span> </p>
-					<p class="dropright text-left"> <span class="other-num text-right col-auto right p-0 serial-init">Permit Length: <strong class="serial">6 Months</strong></span></p>
-                </div>
-              </div>
-              <div class="col-6 d-none">
-                <div>
-                  <p class="float-right dropright text-right"> <span class="other-num text-right col-auto right p-0 serial-init">Single Business Permit For The Year: <strong class="serial">1818</strong></span></p>
-                <p class="float-right dropright text-right"></div>
-              </div>
-            </div>
+            <div class="col-12 validations-container">
+				<div class="d-flex mt-2 col-4">
+				<table class="table table-bordered">
+					<tr><td>Effective Date</td><td>1st January 2018</td></tr>
+					<tr><td>Expiry Date</td><td>31st December 2018</td></tr>
+					<tr><td>Duration</td><td>12 Months</td></tr>
+				</table>
+            </div>  
+		  	</div>
           </div>
         </section>
       </header>
@@ -549,7 +562,7 @@ ol {
           <div class="col-12 ">
             <p class="text-left"><span class="libre-bold">Nairobi City County grants this business permit to</span></P>
           </div>
-          <div class="col-8">
+          <div class="col-8 pr-0">
             <table class="table table-bordered mb-0">
               <tbody>
                 <!--				the name to the busibness-->
@@ -570,13 +583,13 @@ ol {
               </tbody>
             </table>
           </div>
-          <div class="col-4 mb-1">
+          <div class="col-4 mb-1 pl-0">
             <div class="locence-no max-height d-flex h-100 justify-content-center align-items-center align-content-center p-2 flex-column">
               <p class="serial-init">Business ID</p>
               <p> <span class="serial-init font-22"><span class="d-none">BID</span> <span class="serial">150933</span></span</p>
             </div>
           </div>
-          <div class="col-8 mt-4">
+          <div class="col-8 mt-4 pr-0">
             <table class="table table-bordered table-striped">
               <tbody>
                 <tr>
@@ -593,7 +606,7 @@ ol {
               </tbody>
             </table>
           </div>
-			  <div class="col-4 mt-4">
+			  <div class="col-4 mt-4 pl-0">
             <div class="activity-code-bg max-height d-flex h-100 justify-content-center align-items-center align-content-center p-2 flex-column">
               <p class="serial-init">Activity Code</p>
               <p> <span class="serial-init font-22"><span class="serial">610</span></span</p>
