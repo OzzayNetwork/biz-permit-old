@@ -7,6 +7,8 @@
 <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700|Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
 
 <style>
+	
+	
 	@charset "utf-8";
 	:root {
     --blue: #007bff;
@@ -42,9 +44,28 @@
     width: 100%!important;
 }
 	
+	.title-header{
+		display: flex;
+    text-transform: capitalize;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+	}
+	
+	.uppercase{
+		text-transform: uppercase !important;
+	}
+	
+	.red{
+		color: red !important;
+	}
+	
+	
+	
 	.validations-container{
 		display: flex;
     justify-content: flex-end;
+		margin-top: 120px;
 	}
 img {
     vertical-align: middle;
@@ -55,15 +76,15 @@ img {
 }
 	body {
     margin: 0;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: bold;
     line-height: 1.5;
     color: #212529;
     text-align: left;
     background-color: #fff;
-		font-family: 'Open Sans', sans-serif;
     font-size: 14px;
+
 }
 	
 	.container {
@@ -126,6 +147,13 @@ p {
 	.mt-2, .my-2 {
     margin-top: .5rem!important;
 }
+	.logo{
+		height: 177px;
+	}
+	
+	.mx-2, .mr-2 {
+    margin-right: .5rem!important;
+}
 	.mb-0, .my-0 {
     margin-bottom: 0!important;
 }
@@ -135,6 +163,17 @@ p {
 	.pr-0{
 		padding-right: 0px !important;
 	}
+	
+	.col-10{
+		flex: 0 0 75%;
+    max-width: 75% !important;
+	}
+	
+	.col-2{
+		width: 25% !important;
+    flex: 0 0 25%;
+	}
+	
 	hr {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -179,7 +218,7 @@ p {
     flex-direction: column!important;
 }
 	.table-bordered {
-    border: 1px solid #dee2e6;
+    border: 1px solid black;
 }
 .table {
     width: 100%;
@@ -207,10 +246,11 @@ table {
 	.table td, .table th {
     padding: .75rem;
     vertical-align: top;
-    border-top: 1px solid #dee2e6;
+    border-top: 1px solid black;
 }
 	.table-bordered td, .table-bordered th {
     border: 1px solid #dee2e6;
+    border: 1px solid black;
 }
 	.table td {
     padding: 7.5px;
@@ -245,6 +285,11 @@ table {
     font-weight: 500;
     line-height: 1.2;
 }
+	
+	h1{
+		font-size: 42px;
+		font-weight: bold;
+	}
 	.h3, h3 {
     font-size: 1.75rem;
 }
@@ -270,13 +315,16 @@ table {
 .container {
     max-width: 720px;
 }
+	.font-14{
+		font-size: 14px !important;
+	}
 	
 	
 /*	my styles*/
 	
 /* CSS Document */
 body {
-    font-family: 'Open Sans', sans-serif;
+
     font-size: 14px;
 }
 html, body {
@@ -284,7 +332,7 @@ html, body {
     height: 353mm;
 }
 .content-container {
-    background:url("img/nrbbg.jpg");
+    background:transparent
     /* background-attachment: fixed; */
     background-size: cover;
     background-repeat: no-repeat;
@@ -297,11 +345,21 @@ html, body {
 
 }
 .title-font {
+/*
     font-family: "Flamante SemiSlab Medium", "Flamante SemiSlab Bold" !important;
     font-weight: bold;
     font-family: "night train 315" !important;
 	font-family: ClementFivecleme !important;
+*/
 }
+	
+	.validations-container  tr td:first-child{
+		color:#00582f;
+	}
+	
+	.green{
+		color: #00582f;
+	}
 body {
     background: rgb(204,204,204);
 }
@@ -310,7 +368,11 @@ page {
     margin: 0 auto;
     margin-bottom: 0.5cm;
     box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
-    background: repeating-linear-gradient( 45deg, #039840, #039840 10px, #067332 10px, #067332 20px );
+/*    background: repeating-linear-gradient( 45deg, #039840, #039840 10px, #067332 10px, #067332 20px );*/
+	background: url("img/bg-image.png");
+	background-position: bottom;
+    background-size: cover;
+	
 }
 page[size="A4"] {
     width: 21cm;
@@ -325,10 +387,10 @@ page[size="A4"][layout="portrait"] {
     height: 21cm;
 }
 .theqr {
-    width: 90px;
+    width: 100px;
 }
 .libre-bold {
-    font-family: 'Libre Baskerville', serif;
+/*    font-family: 'Libre Baskerville', serif;*/
     font-weight: bold;
 }
 .libre-reg {
@@ -348,6 +410,10 @@ page[size="A4"][layout="portrait"] {
     height: 105px;
     border: 1px solid black;
 }
+	
+	.new-qr-container{
+		border: 1px solid black;
+	}
 p {
     margin-bottom: 7.5px;
 }
@@ -357,7 +423,7 @@ h4 {
 }
 header h3 {
     font-size: 27px;
-    font-weight: bold;
+/*    font-weight: bold;*/
     text-transform: uppercase;
     white-space: nowrap;
 }
@@ -375,10 +441,16 @@ header h5 {
 .table td {
     padding: 7.5px;
 }
+	
+	.issue-date{
+		border: 1px solid black;
+    border-right: 0px;
+	}
 ol {
     list-style-type: lower-alpha;
 }
 .green {
+/*
     display: block;
     height: 8px;
     color: green;
@@ -386,10 +458,17 @@ ol {
     background: #00421B;
     border-bottom: 2px solid #FFDE00;
     margin-bottom: 5px;
+*/
 }
 .note {
     font-size: 12px;
 }
+	
+	.stamp-qr .the-stamp{
+		width: 150px;
+		transform: rotate(33deg);
+		opacity: 91%;
+	}
 .nbk {
     float: right;
     height: 52px;
@@ -412,8 +491,10 @@ ol {
     font-size: 14px;
     text-transform: capitalize;
 }
-.locence-no {
-    background: #00ff3a59 !important;
+.locence-no, .activity-code-bg {
+    background: transparent !important;
+    border: 1px solid black;
+    border-left: none;
 }
 .footer-container {
     position: absolute;
@@ -425,11 +506,15 @@ ol {
     padding-top: 15px !important;
 }
 .the-seal {
-    width: 170px;
+    width: 150px;
     transform: rotate(15deg);
 }
+	
+	.neg2t{
+		margin-top: -2%;
+	}
 .serial-init {
-    font-family: "Flamante SemiSlab Medium", "Flamante SemiSlab Bold" !important;
+/*    font-family: "Flamante SemiSlab Medium", "Flamante SemiSlab Bold" !important;*/
 }
 .serial {
     font-family: Roman !important;
@@ -440,8 +525,25 @@ ol {
     font-size: 22px;
 }
 	
+	.stamp-qr{
+		display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    align-items: baseline;
+	}
+	
 	.activity-code-bg{
-		background: #ff01014a !important;
+/*		background: #ff01014a !important;*/
+	}
+	
+	.the-seal-container{
+		display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+	}
+	.font-12{
+		font-size: 12px !important;
 	}
 
 @media print {
@@ -449,7 +551,7 @@ body, page {
     margin: 0 !important;
     padding: 0 !important;
     box-shadow: none;
-    font-size: 16px;
+    font-size: 18px;
 }
 	.stamp{
 		opacity: 0.6 !important;
@@ -460,6 +562,10 @@ body, page {
     height: 353mm;
     height: 353mm;
 }
+	
+	
+	
+	
 html, body {
     width: 250mm !important;
     height: 353mm !important;
@@ -500,7 +606,7 @@ ol {
     background-color: rgba(0,0,0,.05) !important;
 }
 .title-font {
-    font-size: 28px;
+    font-size: 24px;
 }
 .font-22 {
     font-size: 24px !important;
@@ -532,21 +638,28 @@ ol {
 </head>
 
 <body>
-  <page size="B4" class="p-2 container w-100 h-100">
+  <page size="A4" class="p-2 container w-100 h-100">
     <section class="content-container h-100 w-100 position-relative p-2">
       <header>
         <section class="container p-0 m-0">
           <div class="row"> 
             
             <!--				logo container-->
-            <div class="col-12">
-              <div class=""> <img  src="img/biz-header.png" class="w-100"> </div>
-            </div>
+            <div class="col-12 d-flex title-header green position-absolute">
+				<img src="img/county.png" class="mr-2 logo">
+				<div class="title">
+					<h1 class="uppercase">NAIROBI CITY COUNTY</h1>
+					<h3 class="uppercase">single business permit</h3>
+				</div>
+			</div>
+			  <div class="col-8">
+				  
+			  </div>
 			  
 			  	<hr class="mb-0">
             <!--				control number and issue date container-->
             <div class="col-12 validations-container">
-				<div class="d-flex mt-2 col-4">
+				<div class="d-flex mt-2 col-6">
 				<table class="table table-bordered">
 					<tr><td>Effective Date</td><td>1st January 2018</td></tr>
 					<tr><td>Expiry Date</td><td>31st December 2018</td></tr>
@@ -560,69 +673,64 @@ ol {
       <section class="container p-3 m-0">
         <div class="row">
           <div class="col-12 ">
-            <p class="text-left"><span class="libre-bold">Nairobi City County grants this business permit to</span></P>
+            <p class="text-left"><span class="libre-bold green">Nairobi City County grants this business permit to</span></P>
           </div>
-          <div class="col-8 pr-0">
+          <div class="col-10 pr-0">
             <table class="table table-bordered mb-0">
               <tbody>
                 <!--				the name to the busibness-->
                 <tr>
-                  <td><p class="p-0 m-0">Applicant/Business/Commercial Name</p>
+                  <td><p class="p-0 m-0 green">Applicant/Business/Commercial Name</p>
                     <p class="text-uppercase libre-bold m-0 p-0 title-font">BOB CLUB</p></td>
                 </tr>
                 
                 <!--				the KRA pin-->
                 <tr>
-                  <td>KRA Pin: <span class="libre-bold">A790274608</span></td>
+                  <td><span class="green">KRA Pin: </span><span class="libre-bold">A790274608</span></td>
                 </tr>
                 
-                <!--				the businness ID-->
-                <tr>
-                  <td class="text-capitalize serial-init ">Pin Number: <span class="serial">A790274608</span></td>
-                </tr>
               </tbody>
             </table>
           </div>
-          <div class="col-4 mb-1 pl-0">
+          <div class="col-2 mb-1 pl-0">
             <div class="locence-no max-height d-flex h-100 justify-content-center align-items-center align-content-center p-2 flex-column">
-              <p class="serial-init">Business ID</p>
-              <p> <span class="serial-init font-22"><span class="d-none">BID</span> <span class="serial">150933</span></span</p>
+              <p class="serial-init green">Business ID</p>
+              <p> <span class="serial-init font-22"><span class="d-none">BID</span> <span class="serial title-font">150933</span></span</p>
             </div>
           </div>
-          <div class="col-8 mt-4 pr-0">
-            <table class="table table-bordered table-striped">
+          <div class="col-10 mt-4 pr-0">
+            <table class="table table-bordered ">
               <tbody>
                 <tr>
-                  <td colspan="2"><p class="text-uppercase p-0 m-0">To engage in the activity/Business/Profession or Occupation of</p>
+                  <td colspan="2"><p class="text-uppercase p-0 m-0 green">To engage in the activity/Business/Profession or Occupation of</p>
                     <p class="text-uppercase libre-bold m-0 p-0 serial m-0">Medium professional services firm with 20-50 employees & or area of 100-300 sq M</p>
 					</td>
                 </tr>
                 
                 <tr>
-                  <td class="">systems and applications development</td>
+                  <td class="title-font uppercase">systems and applications development</td>
                 </tr>
                 
                 
               </tbody>
             </table>
           </div>
-			  <div class="col-4 mt-4 pl-0">
+			  <div class="col-2 mt-4 pl-0">
             <div class="activity-code-bg max-height d-flex h-100 justify-content-center align-items-center align-content-center p-2 flex-column">
-              <p class="serial-init">Activity Code</p>
-              <p> <span class="serial-init font-22"><span class="serial">610</span></span</p>
+              <p class="serial-init green">Activity Code</p>
+              <p> <span class="serial-init font-22"><span class="title-font">610</span></span</p>
             </div>
           </div>
 			  
 			  <div class="col-12 mt-4">
-            <table class="table table-bordered table-striped">
+            <table class="table table-bordered ">
               <tbody>
                 <tr>
-                  <td class="text-uppercase">Having paid a business permit fee of</td>
+                  <td class="text-uppercase green">Having paid a business permit fee of</td>
                   <td class="title-font"> Ksh 80,000</td>					
                 </tr>
                 <tr>
-                  <td  class="other-num serial-init">*** Eitghty Thousand ***</td>
-					<td class="text-uppercase">Payment Plan: <span class="libre-bold">12 Months</span></td>
+                  <td  class="other-num serial-init" colspan="2"><span class="green">Amount in words </span>*** Eitghty Thousand ***</td>
                 </tr>
                
               </tbody>
@@ -631,69 +739,66 @@ ol {
 			  
 			  
           <div class="col-12 mt-4">
-            <table class="table table-bordered table-striped">
+            <table class="table table-bordered">
               <tbody>
-                <tr class="locence-no">
-                 <div class="">
-						 <td class="locence-no" colspan="2">Valid From : <span class="libre-bold locence-no p-1">2019 - 03 -19</span></td>
-                  <td class="locence-no">Valid To : <span class="libre-bold locence-no p-1">2020 - 03 -19</span></td>
-					</div>
+                
+                <tr>
+                  <td colspan="3" class="green">Business under this permit shall be conducted at the address as indicated below</td>
                 </tr>
                 <tr>
-                  <td colspan="3">Business under this permit shall be conducted at the address as indicated below</td>
-                </tr>
-                <tr>
-                  <td colspan="2">P.O. Box : <span class="libre-bold">47-10207 Nairobi</span></td>
+                  <td colspan="2"><span class="green">P.O. Box : </span><span class="libre-bold">47-10207 Nairobi</span></td>
                   <td>Plot No. : <span class="libre-bold title-font">749/9404</span></td>
                 </tr>
                 <tr>
-                  <td colspan="3">Road Street : <span class="title-font">MOMBASA ROAD</span></td>
+                  <td colspan="3"><span class="green">Road Street : </span><span class="title-font">MOMBASA ROAD</span></td>
                 </tr>
 				  <tr>
-                  <td>Building : <span class="libre-bold">47-10207 Nairobi</span></td>
-                  <td>Floor : <span class="libre-bold">749/9404</span></td>
-				  <td>Dorr/Stall No. : <span class="libre-bold">749/9404</span></td>
-                </tr>
-                <tr>
-                  <td colspan="3"> This Permit Is for : <span class="libre-bold">Trade License</span></td>
+                  <td><span class="green">Building : </span><span class="libre-bold">47-10207 Nairobi</span></td>
+                  <td><span class="green">Floor : </span><span class="libre-bold">749/9404</span></td>
+				  <td><span class="green">Door/Stall No. : </span><span class="libre-bold">749/9404</span></td>
                 </tr>
               </tbody>
             </table>
           </div>
          
-          <div class="col-8 mt-4 opacity-0">
-            <h3 class="text-left libre-bold exep">Notice</h3>
-            <span class="danger-line"></span>
-            <p class="text-left mt-2"> It is an offence to give false information. Granting this permit does not exempt the business identified above from complying with the current regulations and any other relevant laws and regulations as established by the Government of Kenya and Nairobi City County</p>
-            <ol class="libre-it d-none">
-			  	<li>from monday to friday during trhe hours of <b>5:00 PM to 11:00 PM</b></li>
-				<li>during <b> weekends and public holidays</b> during the hours of <b>2:00 PM to 11:00 PM</b></li>
-				<li>on any day of week at any hour to persons taking meals in the resturant, for consumption with such meals.</li>
-			  </ol>
-          </div>
+				  <div class="col-12 mt-4">
+					 <div class="row m-0">
+					  	 <div class="col-6 p-0">
+					  			<div>
+							 		<div class="p-3 issue-date">
+										<span class="green">Date of Issue: </span><span>2018-04-11 16:13:15</span>
+					  				</div>
+							 	</div>
+								<div class="w-100 the-seal-container">
+							 		 <img src="img/provissional.png" class="the-seal">
+							 	</div>
+						</div>
+					  
+					  <div class="col-6 p-0">
+						  	<div class="new-qr-container p-3">
+								<p class="green">By order of</p>
+								<div class="stamp-qr">
+									<img src="img/biz-stamp.png" class="the-stamp">
+									<img class="mb-2 float-left theqr" src="img/5d37325ea1ff6.png"  >								
+								</div>
+						  	</div>
+						  </div>
+						 
+						 <div class="col-12 mt-2">
+			 				<p class="red font-14 neg2t">Notice: It is an offence to give false information. Granting this permit does not exempt the business identified above from complying and any other relevant laws and regulations as established by the Government of Kenya and Nairobi City County</p>
+			 			</div>
+					  </div>
+				  </div>
+          
+				  
 			  
-		 <div class="col-4 d-flex justify-content-center align-items-center mt-2">
-			<div>
-			 	<img src="img/provissional.png" class="the-seal">
-			 </div>
-	  		</div>
+		 
 				  
 <!--				the sseal-->
-				  <img src="img/biz-stamp.png" class="img stamp">
         </div>
       </section>
-      <div class="container position-absolute footer-container">
-        <div class="row">
-          <div class="col-8">
-            <div class="row">
-              <div class="col-12"> <img class="mb-2 float-left theqr" src="img/5d37325ea1ff6.png"  > </div>
-            </div>
-            <hr class="mt-0 mb-1 mb-5">
-            <p class="text-left"><strong class="exep">Notice</strong>It is an offence to give false information. Granting this permit does not exempt the business identified above from complying with the current regulations and any other relevant laws and regulations as established by the Government of Kenya and Nairobi City County </p>
-          </div>
-        </div>
-      </div>
-      <img src="img/NBK logo.png" class="nbk"> 
+      
+      <img src="img/NBK logo.png" class="nbk d-none"> 
 	  </section>
   </page>
 
